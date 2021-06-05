@@ -1,0 +1,36 @@
+{
+  "name": "swiftyper-node",
+  "version": "1.0.1",
+  "description": "Swiftyper API",
+  "keywords": [
+    "swiftyper",
+    "api"
+  ],
+  "homepage": "https://github.com/swiftyper-sk/swiftyper-node",
+  "author": "Swiftyper <support@swiftyper.sk> (https://swiftyper.sk/)",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/swiftyper-sk/swiftyper-node.git"
+  },
+  "bugs:": "https://github.com/swiftyper-sk/swiftyper-node/issues",
+  "engines": {
+    "node": "^8.1 || >=10.*"
+  },
+  "main": "lib/swiftyper.js",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.13.0",
+    "@typescript-eslint/parser": "^2.13.0",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "typescript": "^3.7.2"
+  },
+  "dependencies": {
+    "@types/node": ">=8.1.0",
+    "qs": "^6.6.0"
+  },
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint --ext .js,.jsx,.ts ."
+  }
+}
