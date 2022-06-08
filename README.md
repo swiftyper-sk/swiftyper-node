@@ -22,7 +22,7 @@ Pred začatím používania je nutné nastaviť API kľúč ktorý môžete spra
 
 **API kľúče sú predvolene neobmedzené.** Neobmedzené kľúče nie sú bezpečné, pretože ich môže používať ktokoľvek a odkiaľkoľvek. Pre produkčné aplikácie odporúčame nastaviť obmedzenia API kľúča nakoľko pomáhajú zabrániť neoprávnenému použitiu a vyčerpávaniu kvót. Obmedzenia určujú, ktoré webové stránky alebo IP adresy môžu používať API kľúč.
 ```js
-const swiftyper = require('swiftyper')('VÁŠ_API_KĽÚČ_SLUŽBY_BUSINESS');
+const swiftyper = require('swiftyper-node')('VÁŠ_API_KĽÚČ_SLUŽBY_BUSINESS');
 
 swiftyper.business.query({query: 'Google Slovakia', country: 'SK'})
   .then(business => console.log(business))
@@ -39,7 +39,7 @@ swiftyper.business.detail('sk_WbilvhDEDokFTWk0FbNjeQ', function(err, result) {
 Alebo s použitím `async`/`await`:
 
 ```js
-import Swiftyper from 'swiftyper';
+import Swiftyper from 'swiftyper-node';
 const swiftyper = new Swiftyper('VÁŠ_API_KĽÚČ_SLUŽBY_PLACES');
 
 (async () => {
